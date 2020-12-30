@@ -22,8 +22,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'sctenifold'
-copyright = '2020, James Cai'
-author = 'James Cai'
+copyright = '2021, Cai Lab'
+author = 'Cai Lab'
 
 
 # -- General configuration ---------------------------------------------------
