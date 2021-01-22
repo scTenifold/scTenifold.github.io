@@ -11,6 +11,7 @@ Welcome to `scTenifold` documentation!
    :maxdepth: 2
    
    sctenifoldnet
-   sctenifoldknk
-   sctenifolddev
+   sctenifoldknk   
    sctenifoldxct
+   sctenifolddev
+   license
