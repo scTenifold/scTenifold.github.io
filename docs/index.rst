@@ -9,9 +9,26 @@ Welcome to `scTenifold` documentation!
 
 .. toctree::
    :maxdepth: 2
+   :caption: scTenifoldNet
    
    sctenifoldnet
-   sctenifoldknk   
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: scTenifoldKnk
+   
+   sctenifoldknk
+
+.. toctree::
+   :maxdepth: 2
+   :caption: scTenifoldXct
+
    sctenifoldxct
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: scTenifoldDev
+   
    sctenifolddev
+   
    license
