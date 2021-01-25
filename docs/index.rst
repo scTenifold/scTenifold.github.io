@@ -9,7 +9,7 @@ Welcome to `scTenifold` documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: scTenifold Suite
+   :caption: scTenifold Tools
    
    sctenifoldnet
    sctenifoldknk
@@ -18,6 +18,6 @@ Welcome to `scTenifold` documentation!
    
 .. toctree::
    :maxdepth: 2
-   :caption: license 
+   :caption: License 
       
    license
