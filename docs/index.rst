@@ -8,7 +8,7 @@ Welcome to `scTenifold` documentation!
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Methods
    
    sctenifoldnet
@@ -17,7 +17,7 @@ Welcome to `scTenifold` documentation!
    sctenifolddev
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: License
       
    license
