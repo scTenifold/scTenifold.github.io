@@ -16,8 +16,8 @@ Installation
 
     ] add https://github.com/jamesjcai/ScTenifoldNet.jl
 
-Usage
------
+Example Use
+-----------
 
 Here is a simple example using randomly generated data.
 
@@ -31,7 +31,7 @@ Here is a simple example using randomly generated data.
     d,aln0,aln1=manialn(Z0,Z1)
     fc,p,adjp=drgenes(d)
 
-Exported functions
+Exported Functions
 ------------------
 
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -48,8 +48,8 @@ Exported functions
 | tenrnet        | Subsamples cells, constructs single-cell gene regulatory networks (scGRNs) using principal component regression (pcnet), and denoises scGRNs using tensor decomposition (tensordecomp).   |
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Example
--------
+Usages
+------
 
 Loading ScTenifoldNet
 ^^^^^^^^^^^^^^^^^^^^^
@@ -125,20 +125,5 @@ Plotting the results
     x=rand(Chisq(1), length(fc))
     qqplot(x, fc)
 
-Citation
---------
-
-To cite **ScTenifoldNet.jl** in publications use:
-
-| Daniel Osorio, Yan Zhong, Guanxun Li, Jianhua Z. Huang, James J. Cai.
-| scTenifoldNet: a machine learning workflow for constructing and
-comparing transcriptome-wide gene regulatory networks from single-cell
-data. bioRxiv 2020.02.12.931469; doi:
-https://doi.org/10.1101/2020.02.12.931469
-
-Author
-------
-
-James Cai - @jamesjcai - jcai@tamu.edu
 
 .. |qqplot| image:: https://raw.githubusercontent.com/jamesjcai/ScTenifoldNet.jl/master/qq.png
