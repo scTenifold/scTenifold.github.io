@@ -11,7 +11,7 @@ from single-cell data <https://doi.org/10.1101/2020.02.12.931469>`__
 Use Case 1
 ----------
 
-.. code-block::
+.. code-block:: matlab
 
     load clean_data_1Ctl_2FgF2.mat
     sce=sce.selectgenes(1,0.15);
@@ -84,7 +84,7 @@ Exported Functions
 
 
 Loading ScTenifoldNet
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 Once installed, **ScTenifoldNet.jl** can be loaded typing:
 
