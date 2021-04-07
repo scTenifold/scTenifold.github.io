@@ -10,7 +10,7 @@ We used the predicted perturbation profile of each gene to identify novel regula
 https://version-11-0b.string-db.org/cgi/network?networkId=boc6qhFWt8zW
 https://maayanlab.cloud/Enrichr/enrich?dataset=65bc740f7cdc9c1679934b699ddacbdf
 
-.. image:: knk1.png
+.. image:: doc/knk1.png
     :width: 200px
     :align: center
     :alt: alternate text
