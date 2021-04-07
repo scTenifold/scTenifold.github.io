@@ -11,7 +11,7 @@ https://version-11-0b.string-db.org/cgi/network?networkId=boc6qhFWt8zW
 https://maayanlab.cloud/Enrichr/enrich?dataset=65bc740f7cdc9c1679934b699ddacbdf
 
 .. image:: docs/knk1.png
-    :width: 200px
+    :width: 500px
     :align: center
     :alt: alternate text
     
