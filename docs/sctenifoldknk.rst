@@ -8,8 +8,13 @@ Using this weighted list together with the gene sets provided by the gene ontolo
 We used the predicted perturbation profile of each gene to identify novel regulators associated with the response to shear stress using the gene sets reported by the gene ontology for this process (`GO:0034616`_, `GO:0071498`_, `GO:0071499 <http://amigo.geneontology.org/amigo/term/GO:0071499>`_). We did this applying single-sample gene set enrichment analysis (ssGSEA included in the GSVA R package) on the predicted perturbation profiles for all genes and then ranked them based on the decreasing average enrichment score for the selected three gene sets. Using this approach, we found *Nfe2l2* (PMID: 25563726, 28877882), *Map2k5* (PMID: 26416763, 21166929), *Ddrgk1*/*Ufbp1* (PMID: 29461087), *Grina*, *H1f0* (PMID: 23802622), *Oaz1*, *Clasp2*, *Pdia6*, *Plpp3* (30429326, 26034042), *Tmod3* as the top 10 predicted candidate genes regulating the response to shear stress in MDLEC cells. 
 
 https://version-11-0b.string-db.org/cgi/network?networkId=boc6qhFWt8zW
-
 https://maayanlab.cloud/Enrichr/enrich?dataset=65bc740f7cdc9c1679934b699ddacbdf
+
+.. image:: knk1.png
+    :width: 200px
+    :align: center
+    :alt: alternate text
+    
 
 .. GO:0034616: http://amigo.geneontology.org/amigo/term/GO:0034616
 .. GO:0071498: http://amigo.geneontology.org/amigo/term/GO:0071498
