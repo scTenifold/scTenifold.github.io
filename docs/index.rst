@@ -12,9 +12,9 @@ Welcome to `scTenifold` documentation!
    :caption: Methods
    
    sctenifoldnet
-   sctenifoldknk
-   sctenifoldxct
+   sctenifoldknk   
    sctenifolddev
+   sctenifoldxct
    
 .. toctree::
    :maxdepth: 1
