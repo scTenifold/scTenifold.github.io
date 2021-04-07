@@ -13,8 +13,7 @@ https://maayanlab.cloud/Enrichr/enrich?dataset=65bc740f7cdc9c1679934b699ddacbdf
 .. image:: docs/knk1.png
     :width: 500px
     :align: center
-    :alt: alternate text
-    
+    :alt: alternate text    
 
 .. GO:0034616: http://amigo.geneontology.org/amigo/term/GO:0034616
 .. GO:0071498: http://amigo.geneontology.org/amigo/term/GO:0071498
