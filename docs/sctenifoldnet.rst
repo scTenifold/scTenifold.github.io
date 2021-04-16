@@ -67,8 +67,9 @@ scTenifoldNet in Julia
 
     ] add https://github.com/jamesjcai/ScTenifoldNet.jl
 
+
 Example Use
------------
+^^^^^^^^^^^
 
 Here is a simple example using randomly generated data.
 
@@ -83,7 +84,7 @@ Here is a simple example using randomly generated data.
     fc,p,adjp=drgenes(d)
 
 Exported Functions
-------------------
+^^^^^^^^^^^^^^^^^^
 
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Code           | Function                                                                                                                                                                                  |
@@ -101,7 +102,7 @@ Exported Functions
 
 
 Loading ScTenifoldNet
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 Once installed, **ScTenifoldNet.jl** can be loaded typing:
 
@@ -110,7 +111,7 @@ Once installed, **ScTenifoldNet.jl** can be loaded typing:
     using ScTenifoldNet
 
 Simulating of a dataset
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Here we simulate a dataset of 2000 cells (columns) and 100 genes (rows)
 following the negative binomial distribution with high sparsity (~67%).
@@ -121,7 +122,7 @@ following the negative binomial distribution with high sparsity (~67%).
     X=rand(d,100,2000)
 
 Generating a perturbed network
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We generate a perturbed network modifying the expression of genes 10, 2,
 and 3 and replacing them with the expression of genes 50, 11, and 5.
@@ -136,8 +137,8 @@ and 3 and replacing them with the expression of genes 50, 11, and 5.
     X=X[:,vec(sum(X,dims=1).>30)]
     Y=Y[:,vec(sum(Y,dims=1).>30)]
 
-ScTenifoldNet
--------------
+Generating networks
+^^^^^^^^^^^^^^^^^^^
 
 Here we run **ScTenifoldNet** under the H0 (there is no change in the
 regulation of the gene) using the same matrix as input and under the HA
@@ -150,7 +151,7 @@ the perturbed network.
     Z1=ScTenifoldNet.tenrnet(Y, donorm=true)
 
 Differential regulation based on manifold alignment distances
--------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As is shown below, under the H0, none of the genes shown a significative
 difference in regulatory profiles using an FDR cut-off of 0.1, but under
@@ -163,7 +164,7 @@ the HA, the 6 genes involved in the perturbation (50, 11, 2, 10, 5, and
     fc,p,adjp=ScTenifoldNet.drgenes(d)
 
 Plotting the results
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 | Results can be easily displayed using quantile-quantile plots.
 | |qqplot|
@@ -176,3 +177,4 @@ Plotting the results
 
 
 .. |qqplot| image:: https://raw.githubusercontent.com/jamesjcai/ScTenifoldNet.jl/master/qq.png
+
