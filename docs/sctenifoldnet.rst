@@ -2,14 +2,31 @@ scTenifoldNet
 =============
 ScTenifoldNet: constructing and comparing scGRNs from single-cell RNAseq (scRNAseq) data
 
-| This package provides a Julia implementation of ScTenifoldNet.
-| See `bioRxiv - scTenifoldNet: a machine learning workflow for
-constructing and comparing transcriptome-wide gene regulatory networks
-from single-cell data <https://doi.org/10.1101/2020.02.12.931469>`__
-| for more information.
+See `bioRxiv - scTenifoldNet: a machine learning workflow for constructing and comparing transcriptome-wide gene regulatory networks
+from single-cell data <https://doi.org/10.1101/2020.02.12.931469>`_ for more information.
 
-Use Case 1
-----------
+
+scTenifoldNet in R
+------------------
+
+.. code-block:: r
+
+    library(scTenifoldNet)
+    library(Matrix)
+    X <- read.csv('X1.csv', header = FALSE)
+    colnames(X) <- paste0('X1_', seq_len(ncol(X)))
+    X <- as.matrix(X)
+    Y <- read.csv('X2.csv', header = FALSE)
+    colnames(Y) <- paste0('X2_', seq_len(ncol(Y)))
+    Y <- as.matrix(Y)
+    rownames(X) <- rownames(Y) <- readLines('genelist.csv')
+    set.seed(1)
+    DR <- scTenifoldNet(X = X, Y = Y)
+    save(DR, file = 'netOut.RData')
+    write.csv(DR$diffRegulation, row.names = FALSE, file = 'netResult.csv')
+    
+scTenifoldNet in MATLAB
+-----------------------
 
 .. code-block:: matlab
 
@@ -43,8 +60,8 @@ Use Case 1
 
 
 
-Installation Julia
-------------------
+scTenifoldNet in Julia
+----------------------
 
 .. code-block:: jl
 
