@@ -46,7 +46,7 @@ Run the following code in `MATLAB`:
   end
   
 
-
+Run 'SCTENIFOLDNET_M` with an example data file clean_data_1Ctl_2FgF2.mat in `MATLAB`:
 
 .. code-block:: matlab
 
