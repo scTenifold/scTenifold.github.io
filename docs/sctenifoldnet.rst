@@ -28,6 +28,26 @@ scTenifoldNet in R
 scTenifoldNet in MATLAB
 -----------------------
 
+
+Quick installation
+^^^^^^^^^^^^^^^^^^
+
+Run the following code in `MATLAB`:
+
+.. code-block:: matlab
+
+  tic
+  disp('Installing scTenifoldNet...')
+  unzip('https://github.com/cailab-tamu/scTenifoldNet/archive/master.zip');
+  addpath('./scTenifoldNet-master/MATLAB');
+  toc
+  if exist('sctenifoldnet_m.m','file')
+      disp('scTenifoldNet installed!')
+  end
+  
+
+
+
 .. code-block:: matlab
 
     load clean_data_1Ctl_2FgF2.mat
