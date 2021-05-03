@@ -2,7 +2,7 @@ scTenifoldKnk
 =============
 The characterization of the perturbation profiles caused by a gene knockout allows identifying genes under its direct regulation. Due to the economical and biological limitations to perform the experimental systematic knockout of all genes in a cell-type-specific manner, the development of computational tools to predict the effect of gene knockouts is needed. Following that purpose, we introduced scTenifoldKnk, a machine learning workflow performing virtual knockout experiments on single-cell gene regulatory networks. scTenifoldKnk only requires wild-type single-cell RNA-seq data as input, and returns a weighted list of genes, that ranked by the regulatory effect predicted for the knockout gene over all the other genes expressed in the cell.
 
-scTenifoldNet in MATLAB
+scTenifoldKnk in MATLAB
 -----------------------
 
 Quick installation
