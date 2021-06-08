@@ -9,6 +9,16 @@ from single-cell data <https://doi.org/10.1101/2020.02.12.931469>`_ for more inf
 scTenifoldNet in R
 ------------------
 
+Installation
+^^^^^^^^^^^^
+
+We just fire up an `R` shell and type:
+
+.. code-block:: r
+    install.packages("scTenifoldNet")
+
+
+
 .. code-block:: r
 
     library(scTenifoldNet)
@@ -29,8 +39,8 @@ scTenifoldNet in MATLAB
 -----------------------
 
 
-Quick installation
-^^^^^^^^^^^^^^^^^^
+Installation
+^^^^^^^^^^^^
 
 Run the following code in `MATLAB`:
 
@@ -46,7 +56,7 @@ Run the following code in `MATLAB`:
   end
   
 
-Run 'SCTENIFOLDNET_M` with an example data file clean_data_1Ctl_2FgF2.mat in `MATLAB`:
+Run 'SCTENIFOLDNET` with an example data file clean_data_1Ctl_2FgF2.mat in `MATLAB`:
 
 .. code-block:: matlab
 
@@ -57,7 +67,7 @@ Run 'SCTENIFOLDNET_M` with an example data file clean_data_1Ctl_2FgF2.mat in `MA
     %%
     X0=sce.X(:,sce.c_batch_id==1);
     X1=sce.X(:,sce.c_batch_id==2);
-    T=sctenifoldnet_m(X0,X1,sce.g,'savegrn',true);
+    T=sctenifoldnet(X0,X1,sce.g,'savegrn',true);
     writetable(T,'resT.txt');
     Tr=e_fgsearun(T);
     writetable(Tr,'resTr.txt');
@@ -83,10 +93,17 @@ Run 'SCTENIFOLDNET_M` with an example data file clean_data_1Ctl_2FgF2.mat in `MA
 scTenifoldNet in Julia
 ----------------------
 
+Installation
+^^^^^^^^^^^^
+
+Run the following code in `Julia`:
+
 .. code-block:: jl
-
-    ] add https://github.com/jamesjcai/ScTenifoldNet.jl
-
+    using Pkg
+    Pkg.add(PackageSpec(url="git://github.com/jamesjcai/ScTenifold.jl.git"))
+    Pkg.test("ScTenifold")
+    # ] add https://github.com/jamesjcai/ScTenifoldNet.jl
+    
 
 Example Use
 ^^^^^^^^^^^
@@ -95,13 +112,19 @@ Here is a simple example using randomly generated data.
 
 .. code-block:: jl
 
-    using ScTenifoldNet
-    X0=rand(100,1000);
+    using ScTenifold
+    using DelimitedFiles
+    # cd(dirname(@__FILE__))
+
     X1=rand(100,1000);
-    Z0=tenrnet(X0)
-    Z1=tenrnet(X1)
-    d,aln0,aln1=manialn(Z0,Z1)
-    fc,p,adjp=drgenes(d)
+    X2=copy(X1)
+    X2[4,:].=0.0
+    @time d,fc,p,adjp=ScTenifold.sctenifoldnet(X1,X2,donorm=false)
+
+    open("output_small.txt", "w") do io
+        writedlm(io, [d fc p adjp])
+    end    
+    
 
 Exported Functions
 ^^^^^^^^^^^^^^^^^^
