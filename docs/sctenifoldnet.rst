@@ -12,12 +12,14 @@ scTenifoldNet in R
 Installation
 ^^^^^^^^^^^^
 
-We just fire up an `R` shell and type:
+In an `R` shell, type:
 
 .. code-block:: r
     install.packages("scTenifoldNet")
 
 
+Basic Use
+^^^^^^^^^
 
 .. code-block:: r
 
@@ -55,6 +57,9 @@ Run the following code in `MATLAB`:
       disp('scTenifoldNet installed!')
   end
   
+
+Basic Use
+^^^^^^^^^
 
 Run 'SCTENIFOLDNET` with an example data file clean_data_1Ctl_2FgF2.mat in `MATLAB`:
 
@@ -105,8 +110,8 @@ Run the following code in `Julia`:
     # ] add https://github.com/jamesjcai/ScTenifoldNet.jl
     
 
-Example Use
-^^^^^^^^^^^
+Basic Use
+^^^^^^^^^
 
 Here is a simple example using randomly generated data.
 
