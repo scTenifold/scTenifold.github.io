@@ -15,6 +15,7 @@ Installation
 In an `R` shell, type:
 
 .. code-block:: r
+
     install.packages("scTenifoldNet")
 
 
@@ -104,6 +105,7 @@ Installation
 Run the following code in `Julia`:
 
 .. code-block:: jl
+
     using Pkg
     Pkg.add(PackageSpec(url="git://github.com/jamesjcai/ScTenifold.jl.git"))
     Pkg.test("ScTenifold")
