@@ -109,6 +109,7 @@ Run the following code in `Julia`:
     using Pkg
     Pkg.add(PackageSpec(url="git://github.com/jamesjcai/ScTenifold.jl.git"))
     Pkg.test("ScTenifold")
+    # or
     # ] add https://github.com/jamesjcai/ScTenifoldNet.jl
     
 
@@ -124,13 +125,13 @@ Here is a simple example using randomly generated data.
     # cd(dirname(@__FILE__))
 
     X1=rand(100,1000);
-    X2=copy(X1)
-    X2[4,:].=0.0
+    X2=copy(X1);
+    X2[4,:].=0.0;
     @time d,fc,p,adjp=ScTenifold.sctenifoldnet(X1,X2,donorm=false)
 
     open("output_small.txt", "w") do io
         writedlm(io, [d fc p adjp])
-    end    
+    end
     
 
 Exported Functions
