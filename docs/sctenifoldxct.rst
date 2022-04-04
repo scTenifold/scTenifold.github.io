@@ -1,6 +1,6 @@
 scTenifoldXct
 =============
+scTenifoldXct: a semi-supervised method for predicting cell-cell interactions and mapping cellular communication graphs via manifold alignment of intra- and inter-cellular gene regulatory networks
 
+The latest single-cell RNA sequencing (scRNA-seq) technology allows transcriptomic information to be gathered from thousands of cells in a single assay, providing unprecedented cellular heterogeneity insight. Data from scRNA-seq enables the detection of cell-cell interactions in a tissue sample. We present scTenifoldXct, a semi-supervised computational tool for detecting ligand-receptor (L-R)-mediated cell-cell interactions and mapping cellular communication graphs. Our method is based on manifold alignment, using L-R pairs as inter-data correspondences to embed ligand and receptor genes expressed in interacting cells into a unified latent space. Deep neural networks are employed to minimize the distance between corresponding genes while preserving the structure of gene regulatory networks. We apply scTenifoldXct to real data sets for testing. We show that our method detects cell-cell interactions with high sensitivity and reveals weak but biologically relevant interactions that tend to be overlooked by other methods. We demonstrate how scTenifoldXct can be used to compare different samples, such as healthy vs. diseased, to identify differential interactions, thereby revealing changes in the communication status of cells.
 
-
-Decoding host-pathogen interactions one cell at the time
