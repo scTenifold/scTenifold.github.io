@@ -1,10 +1,8 @@
 scTenifoldNet
 =============
-ScTenifoldNet: constructing and comparing scGRNs from single-cell RNAseq (scRNAseq) data
+scTenifoldNet: A Machine Learning Workflow for Constructing and Comparing Transcriptome-wide Gene Regulatory Networks from Single-Cell Data
 
-See `bioRxiv - scTenifoldNet: a machine learning workflow for constructing and comparing transcriptome-wide gene regulatory networks
-from single-cell data <https://doi.org/10.1101/2020.02.12.931469>`_ for more information.
-
+See `Patterns paper <https://doi.org/10.1016/j.patter.2020.100139>`_ for more information.
 
 scTenifoldNet in R
 ------------------
